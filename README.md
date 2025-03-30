@@ -1,3 +1,16 @@
+# My Jaffle Shop - dbt Learning Project
+
+This repository is forked from [dbt-labs/jaffle-shop](https://github.com/dbt-labs/jaffle-shop) in 2025 as my personal playground for learning dbt with Recce.
+
+## Personal Learning Goals
+- Experimenting with dbt models
+- Testing Recce integration
+- Learning dbt best practices
+
+## Original Project
+Below is the original jaffle-shop documentation:
+---
+
 # 🥪 The Jaffle Shop 🦘
 
 This is a sandbox project for exploring the basic functionality and latest features of dbt. It's based on a fictional restaurant called the Jaffle Shop that serves [jaffles](https://en.wikipedia.org/wiki/Pie_iron).
@@ -20,22 +33,30 @@ Ready to go? Grab some water and a nice snack, and let's dig in!
 
 ## Table of contents
 
-1. [Prerequisites](#-prerequisites)
-2. [Create new repo from template](#-create-new-repo-from-template)
-3. [Platform setup](#%EF%B8%8F-platform-setup)
-   1. [dbt Cloud IDE](#%EF%B8%8F-dbt-cloud-ide-most-beginner-friendly)
-   2. [dbt Cloud CLI](#-dbt-cloud-cli-if-you-prefer-to-work-locally)
-   3. [Load the data](#-load-the-data)
-4. [Project setup](#%EF%B8%8F-project-setup)
-5. [Going further](#-going-further)
-   1. [Setting up dbt Cloud Environments and Jobs](#%EF%B8%8F-setting-up-dbt-cloud-environments-and-jobs)
-      1. [Creating an Environment](#-creating-an-environment)
-      2. [Creating a Job](#%EF%B8%8F-creating-a-job)
-      3. [Explore your DAG](#%EF%B8%8F-explore-your-dag)
-   2. [Working with a larger dataset](#-working-with-a-larger-dataset)
-      1. [Load the data from S3](#-load-the-data-from-s3)
-      2. [Generate via `jafgen` and seed the data with dbt Core](#-generate-via-jafgen-and-seed-the-data-with-dbt-core)
-   3. [Pre-commit and SQLFluff](#-pre-commit-and-sqlfluff)
+- [My Jaffle Shop - dbt Learning Project](#my-jaffle-shop---dbt-learning-project)
+  - [Personal Learning Goals](#personal-learning-goals)
+  - [Original Project](#original-project)
+  - [Below is the original jaffle-shop documentation:](#below-is-the-original-jaffle-shop-documentation)
+- [🥪 The Jaffle Shop 🦘](#-the-jaffle-shop-)
+  - [Table of contents](#table-of-contents)
+  - [💾 Prerequisites](#-prerequisites)
+  - [📓 Create new repo from template](#-create-new-repo-from-template)
+  - [🏗️ Platform setup](#️-platform-setup)
+    - [🏁 Checkpoint](#-checkpoint)
+    - [😶‍🌫️ dbt Cloud IDE (most beginner friendly)](#️-dbt-cloud-ide-most-beginner-friendly)
+    - [💽 dbt Cloud CLI (if you prefer to work locally)](#-dbt-cloud-cli-if-you-prefer-to-work-locally)
+    - [📊 Load the data](#-load-the-data)
+  - [👷🏻‍♀️ Project setup](#️-project-setup)
+    - [🏁 Checkpoint](#-checkpoint-1)
+  - [🌅 Going further](#-going-further)
+    - [☁️ Setting up dbt Cloud Environments and Jobs](#️-setting-up-dbt-cloud-environments-and-jobs)
+      - [🌍 Creating an Environment](#-creating-an-environment)
+      - [🛠️ Creating a Job](#️-creating-a-job)
+      - [🗺️ Explore your DAG](#️-explore-your-dag)
+    - [🏭 Working with a larger dataset](#-working-with-a-larger-dataset)
+      - [💾 Load the data from S3](#-load-the-data-from-s3)
+      - [🌱 Generate via `jafgen` and seed the data with dbt Core](#-generate-via-jafgen-and-seed-the-data-with-dbt-core)
+    - [🔍 Pre-commit and SQLFluff](#-pre-commit-and-sqlfluff)
 
 ## 💾 Prerequisites
 

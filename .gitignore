@@ -1,16 +1,30 @@
-.venv
-venv
-.env
-env
+# Python virtual environment
+venv/
+.venv/
+*.pyc
+__pycache__/
 
+# dbt specific
 target/
 dbt_packages/
 logs/
+.user.yml
 profiles.yml
 
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
 .DS_Store
 
-.user.yml
+# Environment and secrets
+.env
+*.env
+credentials.yml
 
-.ruff_cache
-__pycache__
+# Data files (optional, if you don't want to track generated data)
+jaffle-data/*.csv
+
+# Misc
+.pytest_cache/
+.python-version
